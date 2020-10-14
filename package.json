@@ -1,0 +1,50 @@
+{
+  "name": "react-rollup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:benediktsommer/react-rollup.git",
+  "author": "Benedikt Sommer <benedikt.sommer@finanzcheck.de>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel static/index.html -p 3010",
+    "build": "rm -rf build/* && rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "^7.0.0-0",
+    "@babel/helper-call-delegate": "^7.11.4",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-image": "^2.0.5",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "parcel-bundler": "^1.12.4",
+    "rollup": "^2.29.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-dotenv": "^0.3.0",
+    "rollup-plugin-filesize": "^9.0.2",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
