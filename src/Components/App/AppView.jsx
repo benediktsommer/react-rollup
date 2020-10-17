@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { useLoadCinema } from '../../hooks/useLoadCinema';
+
 export const AppView = () => {
-  return <p>Test</p>
-}
+  const { isLoading } = useLoadCinema();
+  console.log(isLoading);
+  return <p>Test</p>;
+};
